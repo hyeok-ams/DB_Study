@@ -1,0 +1,62 @@
+mysql 관리자 암호
+root 비밀번호 admin1234
+데이터베이스 만들기
+                데이터베이스 이름 utf8mb4는 한글을 포함한 다양한 문자를 저장하기 위한 문자 집합
+CREATE DATABASE monster_lab 한글을 사용하고 싶으면 아래 두가지 설정 추가
+DEFAULT CHARACTER SET utf8mb4 -- 문자종류, 문화
+DEFAULT COLLATE utf8mb4_0900_ai_ci;
+
+
+
+Monster
+--------------
+id
+name
+grade
+level_no
+exp
+element
+1
+슬라임
+일반
+3
+100
+물
+#############
+2
+불꽃이
+희귀
+8
+350
+불
+
+battle_logs
+--------------
+id
+monster_id
+monster_name
+monster_grade
+monster_level_no
+monster_exp
+monster_element
+result
+battle_at
+1 배틀 프라이머리 유일키
+1 몬스터 프라이머리 유일키
+승리
+26.11.12
+#############
+2 배틀 프라이머리 유일키
+2 몬스터 프라이머리 유일키
+승리
+26.11.13
+#############
+3 배틀 프라이머리 유일키
+1 몬스터 프라이머리 유일키
+승리
+26.11.14
+#############
+4 배틀 프라이머리 유일키
+2 몬스터 프라이머리 유일키
+승리
+26.11.15
